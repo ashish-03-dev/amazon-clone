@@ -416,3 +416,17 @@
     margin-top: 5px;
     font-size: .8rem;
 }
+@media (max-width:768px){
+    .content-box{
+        width:48%;
+    }
+}
+@media(min-width:769px )and(max-width:1080px){
+    .content-box{
+        width:30%;
+    }
+    .shop-items-box{
+        justify-content: space-evenly;
+    }
+
+}
