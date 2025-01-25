@@ -206,7 +206,6 @@
     overflow: visible;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
 
 }
 
@@ -424,12 +423,20 @@
 
     .hero {
         height: 200px;
-        background: linear-gradient(to bottom, transparent 50%, #E3E6E6 100%), url('https://m.media-amazon.com/images/I/61bH-lRPTSL._SR1236,1080_.jpg');
-        background-size: contain;
-
     }
 
     .shop-items-box {
         justify-content: space-evenly;
+    }
+    .hero::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 200px;
+        background-size: contain;
+        background: linear-gradient(to bottom, transparent 50%, #E3E6E6 100%), url('https://m.media-amazon.com/images/I/61bH-lRPTSL._SR1236,1080_.jpg');
+
+        background-position: center;
     }
 }
