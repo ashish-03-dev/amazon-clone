@@ -423,8 +423,9 @@
     }
 
     .hero {
-        height: 140px;
+        height: 200px;
         background: linear-gradient(to bottom, transparent 50%, #E3E6E6 100%), url('https://m.media-amazon.com/images/I/61bH-lRPTSL._SR1236,1080_.jpg');
+        background-size: contain;
 
     }
 
