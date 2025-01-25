@@ -348,7 +348,7 @@
     font-size: .9rem;
 }
 
-.fotter-nav {
+.footer-nav {
     height: 300px;
     margin: auto;
     margin-top: 10px;
@@ -436,5 +436,8 @@
         background-size: contain;
         background:url('https://m.media-amazon.com/images/I/61bH-lRPTSL._SR1236,1080_.jpg');
         background-position: center;
+    }
+    .footer-nav{
+        flex-wrap: wrap;
     }
 }
