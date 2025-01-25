@@ -466,4 +466,7 @@
     .nav-return{
         margin-top: 10px;
     }
+    .panel{
+        overflow-x: auto;
+    }
 }
