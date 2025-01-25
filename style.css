@@ -352,8 +352,7 @@
 
 .fotter-nav {
     height: 300px;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin:auto;
     margin-top: 10px;
     display: flex;
 }
