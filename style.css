@@ -420,13 +420,11 @@
     .content-box{
         width:48%;
     }
-}
-@media(min-width:769px )and(max-width:1080px){
-    .content-box{
-        width:30%;
+    .hero::after {
+    background: linear-gradient(to bottom, transparent 50%, #E3E6E6 100%), url('https://m.media-amazon.com/images/I/61bH-lRPTSL._SR1236,1080_.jpg');
+    
     }
     .shop-items-box{
         justify-content: space-evenly;
     }
-
 }
