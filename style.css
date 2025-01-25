@@ -349,15 +349,15 @@
 }
 
 .footer-nav {
-    height: 300px;
+    height: auto;
     margin: auto;
     margin-top: 10px;
     display: flex;
 }
 
 .accessibility {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     padding: 20px;
     color: white;
 }
