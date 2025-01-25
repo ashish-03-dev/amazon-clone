@@ -421,7 +421,7 @@
     }
 
     .hero {
-        height: 200px;
+        height: 360px;
     }
 
     .shop-items-box {
@@ -432,10 +432,11 @@
         position: absolute;
         left: 0;
         right: 0;
-        height: 200px;
-        background-size: contain;
+        height: 360px;
         background:url('https://m.media-amazon.com/images/I/61bH-lRPTSL._SR1236,1080_.jpg');
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .footer-nav{
         flex-wrap: wrap;
