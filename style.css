@@ -180,7 +180,7 @@
 
 .panel-options {
     text-wrap: nowrap;
-    width: 100%;
+    flex:1;
     overflow-x: auto;
 }
 
