@@ -187,6 +187,8 @@
     display: inline;
     font-size: .9rem;
     margin-left: 20px;
+    overflow-x: auto;
+
 }
 
 .panel-deals {
@@ -467,9 +469,6 @@
         margin-top: 10px;
     }
     .panel{
-        overflow-x: auto;
-    }
-    .panel-options{
         overflow-x: auto;
     }
 }
