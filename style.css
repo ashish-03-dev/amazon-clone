@@ -469,4 +469,7 @@
     .panel{
         overflow-x: auto;
     }
+    .panel-options{
+        overflow-x: auto;
+    }
 }
