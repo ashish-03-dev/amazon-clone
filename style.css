@@ -181,13 +181,13 @@
 .panel-options {
     text-wrap: nowrap;
     width: 100%;
+    overflow-x: auto;
 }
 
 .panel-options p {
     display: inline;
     font-size: .9rem;
     margin-left: 20px;
-    overflow-x: auto;
 
 }
 
