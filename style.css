@@ -4,7 +4,33 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
+.loader{
+    display: block;
+}
+.loaderCenter{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadingCircle{
+    height: 20px; 
+    width: 20px;
+    border-top: 2px solid #2980b9;
+    border-right: 2px solid #2980b9;
+    border-radius:50%;
+    box-sizing: border-box;
+    animation: loaderRotate .9s linear 0s infinite;
+}
+@keyframes loaderRotate{
+    to{transform: rotate(360deg);}
+}
+.loadingText{
+    margin-left: 10px;
+}
+.body{
+    display: none;
+}
 .navBar {
     height: 60px;
     color: white;
