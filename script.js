@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         let loaders = document.querySelectorAll(".loader");
         for (let node of loaders) {
-            // node.style.display="none";
             node.style.opacity = "0";
             node.style.visibility = "hidden";
         }

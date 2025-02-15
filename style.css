@@ -4,36 +4,45 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-.loader{
+
+.loader {
     display: block;
     transition: opacity 2s ease-out, visibility 2s ease-out;
 }
-.loaderCenter{
-    height:100vh;
+
+.loaderCenter {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.loadingCircle{
-    height: 20px; 
+
+.loadingCircle {
+    height: 20px;
     width: 20px;
     border-top: 2px solid #2980b9;
     border-right: 2px solid #2980b9;
-    border-radius:50%;
+    border-radius: 50%;
     box-sizing: border-box;
     animation: loaderRotate .9s linear 0s infinite;
 }
-@keyframes loaderRotate{
-    to{transform: rotate(360deg);}
+
+@keyframes loaderRotate {
+    to {
+        transform: rotate(360deg);
+    }
 }
-.loadingText{
+
+.loadingText {
     margin-left: 10px;
 }
-.body{
+
+.body {
     display: none;
-    opacity:0;
+    opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
 .navBar {
     height: 60px;
     color: white;
@@ -209,7 +218,7 @@
 
 .panel-options {
     text-wrap: nowrap;
-    flex:1;
+    flex: 1;
     overflow-x: auto;
 }
 
@@ -233,8 +242,8 @@
 /* hero section */
 .hero {
     position: relative;
-    height: 270px;
-    width:100%;
+    height: 25vw;
+    min-width: 100%;
     overflow: visible;
     display: flex;
 
@@ -245,7 +254,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    height: 620px;
+    height: clamp(50vw,620px,50vw);
     background: linear-gradient(to bottom, transparent 50%, #E3E6E6 100%), url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2025/JanART/Uber/Gateway/Event/D197029535__WLA_JanART_GatewayPC_Hero_3000x1200_Lifestyle_1._CB552673282_.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -254,7 +263,7 @@
 
 /* shop section*/
 .middle-section {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px;
     position: relative;
     z-index: 2;
 }
@@ -265,7 +274,6 @@
 
 .line-txt {
     height: 40px;
-    margin: 0px 10px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -284,7 +292,7 @@
 }
 
 .shop-items-box {
-    margin: 0px 10px;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -352,16 +360,17 @@
     height: 80%;
 }
 
-.poster {
-    height: 323px;
-    margin: 30px 10px 30px 10px;
-    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/APAYMOVIE/APAYTRAVEL/JANART25/Flight_Editorial_1150x323._CB552708150_.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: auto;
+.poster{
+    padding: 30px 0;
 }
+.poster img{
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
 
+}
 .footer {
     height: auto;
     background-color: #232f3e;
@@ -448,9 +457,10 @@
 }
 
 @media (max-width:768px) {
-    .desktop-only{
+    .desktop-only {
         display: none;
     }
+
     .content-box {
         width: 360px;
     }
@@ -463,42 +473,49 @@
     .shop-items-box {
         justify-content: space-evenly;
     }
+
     .hero::after {
         content: "";
         position: absolute;
-        left: 0;
-        right: 0;
-        height: 360px;
-        background:url('https://m.media-amazon.com/images/I/61bH-lRPTSL._SR1236,1080_.jpg');
+        height: 100vw;
+        background: url('https://m.media-amazon.com/images/I/61bH-lRPTSL._SR1236,1080_.jpg');
         background-repeat: no-repeat;
         background-size: contain;
     }
-    .footer-nav{
+
+    .footer-nav {
         flex-wrap: wrap;
     }
+
     .poster {
-        height:110px;
+        height: auto;
     }
-    .navBar{
-        height:auto;
+
+    .navBar {
+        height: auto;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .nav-logo{
-        height:auto;
+
+    .nav-logo {
+        height: auto;
     }
-    .nav-search{
-        margin:2px;
-        width:100vw;
+
+    .nav-search {
+        margin: 2px;
+        width: 100vw;
     }
-    .nav-logo{
+
+    .nav-logo {
         margin-left: 0px;
-        width:120px;
+        width: 120px;
     }
-    .nav-return{
+
+    .nav-return {
         margin-top: 10px;
     }
-    .panel{
-        overflow-x:auto;
+
+    .panel {
+        overflow-x: auto;
     }
 }
