@@ -40,7 +40,7 @@
 .body {
     display: none;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .navBar {
@@ -48,8 +48,9 @@
     color: white;
     background-color: #0f1111;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
     align-items: center;
+    gap:1rem;
 }
 
 .nav-logo {
@@ -109,11 +110,11 @@
 
 /*box3*/
 .nav-search {
-    width: 100%;
+    min-width: fit-content;
+    flex:1;
     height: 40px;
     display: flex;
-    /* justify-content: space-evenly; */
-    margin-left: 20px;
+    margin: 0 20px;
     border-radius: 4px;
     background-color: purple;
 }
@@ -157,9 +158,10 @@
 
 .nav-right {
     display: flex;
-    width: 35%;
     justify-content: space-evenly;
     align-items: center;
+    gap:1rem;
+    padding: 0 20px;
 }
 
 .nav-signin {
@@ -208,6 +210,7 @@
     color: white;
     background-color: #222f3d;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -219,13 +222,14 @@
 .panel-options {
     text-wrap: nowrap;
     flex: 1;
-    overflow-x: auto;
+    overflow-x: hidden;
+    padding: 0 10px;
 }
 
 .panel-options p {
     display: inline;
     font-size: .9rem;
-    margin-left: 20px;
+    padding: 0 10px;
 
 }
 
@@ -236,17 +240,13 @@
 }
 
 .page {
-    background-color: #E3E6E6;
+    background-color: #f3f3f3;
 }
 
 /* hero section */
 .hero {
     position: relative;
-    height: 25vw;
-    min-width: 100%;
-    overflow: visible;
-    display: flex;
-
+    height: 24vw;
 }
 
 .hero::after {
@@ -254,8 +254,8 @@
     position: absolute;
     left: 0;
     right: 0;
-    height: clamp(50vw,620px,50vw);
-    background: linear-gradient(to bottom, transparent 50%, #E3E6E6 100%), url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2025/JanART/Uber/Gateway/Event/D197029535__WLA_JanART_GatewayPC_Hero_3000x1200_Lifestyle_1._CB552673282_.jpg');
+    height: clamp(24vw,620px,50vw);
+    background: linear-gradient(to bottom, transparent 10%, #E3E6E6 100%), url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2025/JanART/Uber/Gateway/Event/D197029535__WLA_JanART_GatewayPC_Hero_3000x1200_Lifestyle_1._CB552673282_.jpg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -292,7 +292,6 @@
 }
 
 .shop-items-box {
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -301,13 +300,14 @@
 
 .content-box {
     height: 370px;
-    width: 24%;
+    width: clamp(300px, 24%, 24%);
     margin-top: 30px;
     padding: 25px 20px 10px 20px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    border-radius:8px;
 }
 
 .product-img {
@@ -462,7 +462,7 @@
     }
 
     .content-box {
-        width: 360px;
+        width: clamp(340px, 48%, 48%);
     }
 
     .hero {
@@ -503,7 +503,7 @@
 
     .nav-search {
         margin: 2px;
-        width: 100vw;
+        width: 100%;
     }
 
     .nav-logo {
@@ -514,8 +514,10 @@
     .nav-return {
         margin-top: 10px;
     }
-
-    .panel {
-        overflow-x: auto;
+    .panel-options{
+        display: none;
+    }
+    .nav-right{
+        display: none;
     }
 }
